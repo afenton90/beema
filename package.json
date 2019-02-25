@@ -8,7 +8,9 @@
   "license": "MIT",
   "scripts": {
     "build": "rollup --config ./rollup.config.js",
-    "lint": "eslint . --ext .js,.jsx"
+    "lint": "eslint . --ext .js,.jsx",
+    "dev": "PARCEL=true parcel index.html",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "7.3.3",
@@ -21,14 +23,20 @@
     "@babel/plugin-transform-destructuring": "7.3.2",
     "@babel/preset-env": "7.3.1",
     "@babel/preset-react": "7.0.0",
+    "babel-plugin-styled-components": "1.10.0",
     "eslint": "5.14.1",
     "eslint-config-airbnb": "17.1.0",
     "eslint-config-prettier": "4.0.0",
     "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jest": "22.3.0",
     "eslint-plugin-jsx-a11y": "6.2.1",
     "eslint-plugin-prettier": "3.0.1",
     "eslint-plugin-react": "7.12.4",
+    "jest": "24.1.0",
+    "parcel": "1.11.0",
     "prettier": "1.16.4",
+    "react-dom": "16.8.3",
+    "react-testing-library": "6.0.0",
     "rollup": "1.2.3",
     "rollup-plugin-babel": "4.3.2",
     "rollup-plugin-commonjs": "9.2.1",
@@ -36,6 +44,7 @@
     "rollup-plugin-node-resolve": "4.0.1"
   },
   "dependencies": {
-    "react": "16.8.3"
+    "react": "16.8.3",
+    "styled-components": "4.1.3"
   }
 }

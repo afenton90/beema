@@ -1,14 +1,17 @@
+const plugins = [
+  'babel-plugin-styled-components',
+  '@babel/plugin-transform-destructuring',
+  '@babel/plugin-proposal-export-default-from',
+  '@babel/plugin-proposal-export-namespace-from',
+  ['@babel/plugin-proposal-class-properties', { loose: true }],
+  '@babel/plugin-proposal-object-rest-spread',
+  '@babel/plugin-proposal-json-strings',
+  '@babel/plugin-syntax-import-meta',
+  '@babel/plugin-transform-react-display-name'
+];
+
 module.exports = {
-  plugins: [
-    '@babel/plugin-transform-destructuring',
-    '@babel/plugin-proposal-export-default-from',
-    '@babel/plugin-proposal-export-namespace-from',
-    ['@babel/plugin-proposal-class-properties', { loose: true }],
-    '@babel/plugin-proposal-object-rest-spread',
-    '@babel/plugin-proposal-json-strings',
-    '@babel/plugin-syntax-import-meta',
-    '@babel/plugin-transform-react-display-name'
-  ],
+  plugins: process.env.PARCEL ? [] : plugins,
   env: {
     development: {
       sourceMaps: 'inline',
