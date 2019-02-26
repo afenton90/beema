@@ -11,6 +11,8 @@ const external = Object.keys({ ...peerDependencies, ...dependencies });
 export default [
   {
     input: {
+      Card: './src/card/index.jsx',
+      Button: './src/button/index.jsx',
       'index.es': './src/index.js'
     },
     output: {
