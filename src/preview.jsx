@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
-import { Button, Card, CardBody } from './index';
+import { Button, Card, CardBody, Avatar, AvatarHeading, AvatarImage } from './index';
 
 const Container = styled.div`
   display: grid;
@@ -17,6 +17,26 @@ const StyledButton = styled(Button)`
 
 const Preview = () => (
   <Fragment>
+    <h2>Avatars</h2>
+    <Container>
+      <Avatar>
+        <AvatarImage src="https://avatars2.githubusercontent.com/u/8963736?s=460&v=4" />
+        <AvatarHeading>Alex Fenton</AvatarHeading>
+      </Avatar>
+      <Avatar>
+        <AvatarImage src="https://avatars3.githubusercontent.com/u/14904083?s=460&v=4" />
+        <AvatarHeading>Stefan McCready</AvatarHeading>
+      </Avatar>
+    </Container>
+    <h2>Avatars - No Label</h2>
+    <Container>
+      <Avatar>
+        <AvatarImage src="https://avatars2.githubusercontent.com/u/8963736?s=460&v=4" />
+      </Avatar>
+      <Avatar>
+        <AvatarImage src="https://avatars3.githubusercontent.com/u/14904083?s=460&v=4" />
+      </Avatar>
+    </Container>
     <h2>Button</h2>
     <StyledButton>Click Me!</StyledButton>
     <h2>Cards</h2>
