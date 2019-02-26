@@ -7,6 +7,16 @@ export const Card = styled.div`
   background: #fff;
   color: #666;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+  ${({ hover }) =>
+    hover
+      ? `
+    :hover {
+      background: #fff;
+      box-shadow: 0 14px 25px rgba(0,0,0,0.16);
+    }
+  `
+      : ``}
 `;
 
 export const CardBody = styled.div`
