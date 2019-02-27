@@ -1,11 +1,4 @@
-import React from 'react';
 import styled from 'styled-components';
-
-const Image = styled.img`
-  padding-right: 30px;
-  height: 80px;
-  width: 80px;
-`;
 
 export const Avatar = styled.div`
   display: flex;
@@ -16,9 +9,11 @@ export const Avatar = styled.div`
   align-items: center;
 `;
 
-export const AvatarImage = ({ src }) => {
-  return <Image src={src} />;
-};
+export const AvatarImage = styled.img`
+  padding-right: 30px;
+  height: 80px;
+  width: 80px;
+`;
 
 export const AvatarHeading = styled.div`
   flex: 1;
