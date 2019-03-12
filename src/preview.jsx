@@ -2,7 +2,16 @@ import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 import styled from 'styled-components';
 
-import { Button, Card, CardBody, Avatar, AvatarHeading, AvatarImage } from './index';
+import {
+  Button,
+  Card,
+  CardBody,
+  Avatar,
+  AvatarHeading,
+  AvatarImage,
+  DotNav,
+  DotNavItem
+} from './index';
 
 const Container = styled.div`
   display: grid;
@@ -83,6 +92,14 @@ const Preview = () => (
           alt="skyline"
         />
       </Card>
+    </Container>
+    <h2>DotNav</h2>
+    <Container>
+      <DotNav>
+        <DotNavItem>Item 1</DotNavItem>
+        <DotNavItem active>Item 2</DotNavItem>
+        <DotNavItem>Item 3</DotNavItem>
+      </DotNav>
     </Container>
   </Fragment>
 );
