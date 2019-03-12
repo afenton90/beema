@@ -9,7 +9,7 @@
   "scripts": {
     "build": "rollup --config ./rollup.config.js",
     "lint": "eslint . --ext .js,.jsx",
-    "dev": "PARCEL=true parcel index.html",
+    "dev": "set PARCEL=true && parcel index.html",
     "test": "jest"
   },
   "devDependencies": {

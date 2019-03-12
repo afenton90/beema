@@ -11,7 +11,8 @@ import {
   AvatarImage,
   DotNav,
   DotNavItem,
-  Divider
+  Divider,
+  Spinner
 } from './index';
 
 const Container = styled.div`
@@ -109,6 +110,10 @@ const Preview = () => (
     <h2>Divider</h2>
     <Container>
       <StyledDivider />
+    </Container>
+    <h2>Spinner</h2>
+    <Container>
+      <Spinner scale={40} />
     </Container>
   </Fragment>
 );
