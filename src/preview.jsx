@@ -10,7 +10,8 @@ import {
   AvatarHeading,
   AvatarImage,
   DotNav,
-  DotNavItem
+  DotNavItem,
+  Divider
 } from './index';
 
 const Container = styled.div`
@@ -22,6 +23,10 @@ const Container = styled.div`
 
 const StyledButton = styled(Button)`
   background-color: #fff;
+`;
+
+const StyledDivider = styled(Divider)`
+  width: 100%;
 `;
 
 const Preview = () => (
@@ -100,6 +105,10 @@ const Preview = () => (
         <DotNavItem active>Item 2</DotNavItem>
         <DotNavItem>Item 3</DotNavItem>
       </DotNav>
+    </Container>
+    <h2>Divider</h2>
+    <Container>
+      <StyledDivider />
     </Container>
   </Fragment>
 );
