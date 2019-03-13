@@ -1,6 +1,6 @@
 {
   "name": "beema",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "UI library of styled react components. No Grid, Just components.",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
