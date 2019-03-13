@@ -19,6 +19,7 @@ export default [
       Dotnav: './src/dotnav/index.jsx',
       Input: './src/input/index.jsx',
       RadioButton: './src/radiobutton/index.jsx',
+      Textarea: './src/textarea/index.jsx',
       'index.es': './src/index.js'
     },
     output: {

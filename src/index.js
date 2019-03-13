@@ -6,3 +6,4 @@ export { Divider } from './divider';
 export { Input } from './input';
 export { Checkbox } from './checkbox';
 export { RadioButton } from './radiobutton';
+export { Textarea } from './textarea';

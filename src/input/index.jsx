@@ -32,8 +32,10 @@ export const Input = styled.input`
     height: auto;
   }
 
+  ::placeholder,
   ::-moz-placeholder {
     opacity: 1;
+    color: #999;
   }
 
   :focus {
