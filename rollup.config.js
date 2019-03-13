@@ -14,6 +14,7 @@ export default [
       Avatar: './src/avatar/index.jsx',
       Button: './src/button/index.jsx',
       Card: './src/card/index.jsx',
+      Checkbox: './src/checkbox/index.jsx',
       Divider: './src/divider/index.jsx',
       Dotnav: './src/dotnav/index.jsx',
       Input: './src/input/index.jsx',

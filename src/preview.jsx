@@ -12,7 +12,8 @@ import {
   DotNav,
   DotNavItem,
   Divider,
-  Input
+  Input,
+  Checkbox
 } from './index';
 
 const Container = styled.div`
@@ -28,6 +29,10 @@ const StyledButton = styled(Button)`
 
 const StyledDivider = styled(Divider)`
   width: 100%;
+`;
+
+const StyledCheckbox = styled(Checkbox)`
+  margin-right: 5px;
 `;
 
 const Preview = () => (
@@ -114,6 +119,17 @@ const Preview = () => (
     <h2>Input</h2>
     <Container>
       <Input type="text" placeholder="Type some stuff" />
+    </Container>
+    <h2>Checkbox</h2>
+    <Container>
+      <label htmlFor="opt-1">
+        <StyledCheckbox id="opt-1" />
+        Option 1
+      </label>
+      <label htmlFor="opt-2">
+        <StyledCheckbox id="opt-2" />
+        Option 2
+      </label>
     </Container>
   </Fragment>
 );
