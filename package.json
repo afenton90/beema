@@ -2,10 +2,15 @@
   "name": "beema",
   "version": "0.1.0",
   "description": "UI library of styled react components. No Grid, Just components.",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "sideEffects": false,
   "repository": "https://github.com/afenton90/beema.git",
   "author": "Alex Fenton",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "rollup --config ./rollup.config.js",
     "lint": "eslint . --ext .js,.jsx",

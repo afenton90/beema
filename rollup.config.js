@@ -8,7 +8,31 @@ const { dependencies = {}, peerDependencies = {} } = require('./package.json');
 
 const external = Object.keys({ ...peerDependencies, ...dependencies });
 
+const plugins = [
+  babel({
+    ...babelConfig,
+    exclude: /node_modules/
+  }),
+  jsonPlugin(),
+  nodeResolve({
+    extensions: ['.js', '.jsx', '.json', '.scss', '.md']
+  }),
+  commonjsPlugin({
+    include: /node_modules/,
+    ignoreGlobal: true
+  })
+];
+
 export default [
+  {
+    input: `./src/index.js`,
+    output: {
+      file: `./dist/index.js`,
+      format: 'cjs'
+    },
+    external,
+    plugins
+  },
   {
     input: {
       Avatar: './src/avatar/index.jsx',
@@ -29,19 +53,6 @@ export default [
       format: 'esm'
     },
     external,
-    plugins: [
-      babel({
-        ...babelConfig,
-        exclude: /node_modules/
-      }),
-      jsonPlugin(),
-      nodeResolve({
-        extensions: ['.js', '.jsx', '.json', '.scss', '.md']
-      }),
-      commonjsPlugin({
-        include: /node_modules/,
-        ignoreGlobal: true
-      })
-    ]
+    plugins
   }
 ];
