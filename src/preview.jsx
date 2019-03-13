@@ -14,7 +14,9 @@ import {
   Divider,
   Input,
   Checkbox,
-  RadioButton
+  RadioButton,
+  Textarea,
+  Select
 } from './index';
 
 const Container = styled.div`
@@ -146,6 +148,18 @@ const Preview = () => (
         <StyledRadioButton id="opt-4" />
         Option 4
       </label>
+    </Container>
+    <h2>Textarea</h2>
+    <Container>
+      <Textarea placeholder="Write something neat here" />
+    </Container>
+    <h2>Select</h2>
+    <Container>
+      <Select>
+        <option>Option 1</option>
+        <option>Option 2</option>
+        <option>Option 3</option>
+      </Select>
     </Container>
   </Fragment>
 );

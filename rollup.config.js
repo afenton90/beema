@@ -20,6 +20,7 @@ export default [
       Input: './src/input/index.jsx',
       RadioButton: './src/radiobutton/index.jsx',
       Textarea: './src/textarea/index.jsx',
+      Select: './src/select/index.jsx',
       'index.es': './src/index.js'
     },
     output: {
