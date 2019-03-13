@@ -13,7 +13,8 @@ import {
   DotNavItem,
   Divider,
   Input,
-  Checkbox
+  Checkbox,
+  RadioButton
 } from './index';
 
 const Container = styled.div`
@@ -32,6 +33,10 @@ const StyledDivider = styled(Divider)`
 `;
 
 const StyledCheckbox = styled(Checkbox)`
+  margin-right: 5px;
+`;
+
+const StyledRadioButton = styled(RadioButton)`
   margin-right: 5px;
 `;
 
@@ -129,6 +134,17 @@ const Preview = () => (
       <label htmlFor="opt-2">
         <StyledCheckbox id="opt-2" />
         Option 2
+      </label>
+    </Container>
+    <h2>Radio Button</h2>
+    <Container>
+      <label htmlFor="opt-3">
+        <StyledRadioButton id="opt-3" />
+        Option 3
+      </label>
+      <label htmlFor="opt-4">
+        <StyledRadioButton id="opt-4" />
+        Option 4
       </label>
     </Container>
   </Fragment>

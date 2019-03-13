@@ -18,6 +18,7 @@ export default [
       Divider: './src/divider/index.jsx',
       Dotnav: './src/dotnav/index.jsx',
       Input: './src/input/index.jsx',
+      RadioButton: './src/radiobutton/index.jsx',
       'index.es': './src/index.js'
     },
     output: {
