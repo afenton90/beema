@@ -1,5 +1,6 @@
 export { Avatar, AvatarHeading, AvatarImage } from './avatar';
 export { Button } from './button';
+export { Badge } from './badge';
 export { Card, CardBody } from './card';
 export { DotNav, DotNavItem } from './dotnav';
 export { Divider } from './divider';

@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 import {
   Button,
+  Badge,
   Card,
   CardBody,
   Avatar,
@@ -39,6 +40,10 @@ const StyledCheckbox = styled(Checkbox)`
 `;
 
 const StyledRadioButton = styled(RadioButton)`
+  margin-right: 5px;
+`;
+
+const StyledBadge = styled(Badge)`
   margin-right: 5px;
 `;
 
@@ -161,6 +166,9 @@ const Preview = () => (
         <option>Option 3</option>
       </Select>
     </Container>
+    <h2>Badge</h2>
+    <StyledBadge>10</StyledBadge>
+    <StyledBadge>270</StyledBadge>
   </Fragment>
 );
 

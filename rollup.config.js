@@ -13,6 +13,7 @@ export default [
     input: {
       Avatar: './src/avatar/index.jsx',
       Button: './src/button/index.jsx',
+      Badge: './src/badge/index.jsx',
       Card: './src/card/index.jsx',
       Checkbox: './src/checkbox/index.jsx',
       Divider: './src/divider/index.jsx',
