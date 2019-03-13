@@ -11,7 +11,8 @@ import {
   AvatarImage,
   DotNav,
   DotNavItem,
-  Divider
+  Divider,
+  Input
 } from './index';
 
 const Container = styled.div`
@@ -109,6 +110,10 @@ const Preview = () => (
     <h2>Divider</h2>
     <Container>
       <StyledDivider />
+    </Container>
+    <h2>Input</h2>
+    <Container>
+      <Input type="text" placeholder="Type some stuff" />
     </Container>
   </Fragment>
 );
