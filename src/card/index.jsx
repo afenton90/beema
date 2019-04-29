@@ -1,18 +1,21 @@
 import styled from 'styled-components';
+import { space, backgroundColor, color, position } from 'styled-system';
+
+import { ss } from '../styled-with-default';
 
 export const Card = styled.div`
-  position: relative;
   box-sizing: border-box;
   transition: box-shadow 0.1s ease-in-out;
-  background: #fff;
-  color: #666;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+
+  ${ss(position, { position: 'relative' })}
+  ${ss(backgroundColor, { backgroundColor: '#fff' })}
+  ${ss(color, { color: '#666' })}
 
   ${({ hover }) =>
     hover
       ? `
     :hover {
-      background: #fff;
       box-shadow: 0 14px 25px rgba(0,0,0,0.16);
     }
   `
@@ -20,7 +23,7 @@ export const Card = styled.div`
 `;
 
 export const CardBody = styled.div`
-  padding: 30px 30px;
+  ${ss(space, { p: 6 })}
 
   ::before,
   ::after {
@@ -34,9 +37,5 @@ export const CardBody = styled.div`
 
   :last-child {
     margin-bottom: 0;
-  }
-
-  @media (min-width: 1200px) {
-    padding: 40px 40px;
   }
 `;

@@ -1,27 +1,24 @@
 import styled from 'styled-components';
+import { space, border, display, fontSize, textAlign, backgroundColor, color } from 'styled-system';
+
+import { ss } from '../styled-with-default';
 
 export const Button = styled.button`
-  margin: 0;
-  border: none;
   overflow: visible;
-  font: inherit;
-  color: inherit;
   text-transform: none;
-  display: inline-block;
   box-sizing: border-box;
-  padding: 0 30px;
   vertical-align: middle;
-  font-size: 14px;
-  line-height: 38px;
-  text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   transition: 0.1s ease-in-out;
   transition-property: color, background-color, border-color;
 
-  background-color: transparent;
-  color: #222;
-  border: 1px solid #e5e5e5;
+  ${ss(space, { m: 0, pt: 1, pb: 1, pl: 6, pr: 6 })}
+  ${ss(border, { border: 'none' })}
+  ${ss(display, { display: 'inline-block' })}
+  ${ss(fontSize, { fontSize: 1 })}
+  ${ss(textAlign, { textAlign: 'center' })}
+  ${ss(backgroundColor, { backgroundColor: 'transparent' })}
+  ${ss(color, { color: '#222' })}
 
   :not(:disabled) {
     cursor: pointer;
@@ -30,13 +27,8 @@ export const Button = styled.button`
   :active,
   :hover,
   :focus {
-    background-color: transparent;
-    color: #222;
-    border-color: #b2b2b2;
-  }
-
-  :active {
-    border-color: #999;
+    ${ss(backgroundColor, { backgroundColor: 'transparent' })}
+    ${ss(color, { color: '#222' })}
   }
 
   :hover {
